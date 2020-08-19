@@ -3,17 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		736FBFB8B254EF9036138A81 /* Pods_TmVelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEB58A5FAA637543BF30467 /* Pods_TmVelo.framework */; };
+		7C565C8C3D0520C44C7327EB /* Pods_TmVeloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910AB8DFF723479E8D5A936C /* Pods_TmVeloTests.framework */; };
+		900217B424ED4FC60078251A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 900217B324ED4FC60078251A /* .gitignore */; };
+		9004E04B22FAB217002F876D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004E04A22FAB217002F876D /* Animator.swift */; };
+		9004E04D22FAB77F002F876D /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004E04C22FAB77F002F876D /* AnimationFactory.swift */; };
+		9011D24E2302CD2E009D46AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9011D24D2302CD2E009D46AC /* GoogleService-Info.plist */; };
+		9014949A22EB94D300C88D95 /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014949922EB94D300C88D95 /* StationAnnotation.swift */; };
+		9014949C22EB97C000C88D95 /* StationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014949B22EB97C000C88D95 /* StationAnnotationView.swift */; };
+		903745FD22EF29540095BC43 /* SideMenuRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903745FC22EF29540095BC43 /* SideMenuRootViewController.swift */; };
+		9062153422FA091400EE9007 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062153322FA091400EE9007 /* SideMenuTableViewCell.swift */; };
+		9062153A22FA10B000EE9007 /* LeftSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062153922FA10B000EE9007 /* LeftSlideMenuViewController.swift */; };
+		90690CB022FD6DCF00152B94 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90690CAF22FD6DCF00152B94 /* Reachability.swift */; };
 		90F491C122EB0BA600FB90F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491C022EB0BA600FB90F2 /* AppDelegate.swift */; };
-		90F491C322EB0BA600FB90F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491C222EB0BA600FB90F2 /* ViewController.swift */; };
+		90F491C322EB0BA600FB90F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491C222EB0BA600FB90F2 /* MapViewController.swift */; };
 		90F491C622EB0BA600FB90F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F491C422EB0BA600FB90F2 /* Main.storyboard */; };
 		90F491C822EB0BA800FB90F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F491C722EB0BA800FB90F2 /* Assets.xcassets */; };
-		90F491CB22EB0BA800FB90F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F491C922EB0BA800FB90F2 /* LaunchScreen.storyboard */; };
 		90F491D622EB0BA800FB90F2 /* TmVeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491D522EB0BA800FB90F2 /* TmVeloTests.swift */; };
 		90F491E122EB0BA800FB90F2 /* TmVeloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491E022EB0BA800FB90F2 /* TmVeloUITests.swift */; };
+		90F491F022EB0F1500FB90F2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491EF22EB0F1500FB90F2 /* APIRequest.swift */; };
+		90F491F322EB166500FB90F2 /* NetworkStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491F222EB166500FB90F2 /* NetworkStations.swift */; };
+		90F491F522EB1B8200FB90F2 /* LoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491F422EB1B8200FB90F2 /* LoadStations.swift */; };
+		90F491F722EB21E700FB90F2 /* MapSetupAndOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F491F622EB21E700FB90F2 /* MapSetupAndOperations.swift */; };
+		BF7E735035F1C71D424E3F03 /* Pods_TmVeloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA3D3C29FFB4C976E761D87 /* Pods_TmVeloUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +50,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BEB58A5FAA637543BF30467 /* Pods_TmVelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmVelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBBD676A60883BC1A410345 /* Pods-TmVelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVelo.release.xcconfig"; path = "Target Support Files/Pods-TmVelo/Pods-TmVelo.release.xcconfig"; sourceTree = "<group>"; };
+		2FA3D3C29FFB4C976E761D87 /* Pods_TmVeloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmVeloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		386879454C15259B2706E0F5 /* Pods-TmVeloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVeloTests.debug.xcconfig"; path = "Target Support Files/Pods-TmVeloTests/Pods-TmVeloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62565DC341EDD356292DBAE5 /* Pods-TmVeloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVeloUITests.debug.xcconfig"; path = "Target Support Files/Pods-TmVeloUITests/Pods-TmVeloUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		764A3FF1442BEA534416F7E1 /* Pods-TmVeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVeloTests.release.xcconfig"; path = "Target Support Files/Pods-TmVeloTests/Pods-TmVeloTests.release.xcconfig"; sourceTree = "<group>"; };
+		900217B324ED4FC60078251A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9004E04A22FAB217002F876D /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		9004E04C22FAB77F002F876D /* AnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFactory.swift; sourceTree = "<group>"; };
+		9011D24D2302CD2E009D46AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9014949622EB2F1E00C88D95 /* Timisoara.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Timisoara.gpx; sourceTree = "<group>"; };
+		9014949922EB94D300C88D95 /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
+		9014949B22EB97C000C88D95 /* StationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotationView.swift; sourceTree = "<group>"; };
+		903745FC22EF29540095BC43 /* SideMenuRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRootViewController.swift; sourceTree = "<group>"; };
+		9062153322FA091400EE9007 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9062153922FA10B000EE9007 /* LeftSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSlideMenuViewController.swift; sourceTree = "<group>"; };
+		90690CAF22FD6DCF00152B94 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		90F491BD22EB0BA600FB90F2 /* TmVelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TmVelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F491C022EB0BA600FB90F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90F491C222EB0BA600FB90F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90F491C222EB0BA600FB90F2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		90F491C522EB0BA600FB90F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90F491C722EB0BA800FB90F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90F491CA22EB0BA800FB90F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F491CC22EB0BA800FB90F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F491D122EB0BA800FB90F2 /* TmVeloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TmVeloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F491D522EB0BA800FB90F2 /* TmVeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmVeloTests.swift; sourceTree = "<group>"; };
@@ -47,6 +79,13 @@
 		90F491DC22EB0BA800FB90F2 /* TmVeloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TmVeloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F491E022EB0BA800FB90F2 /* TmVeloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmVeloUITests.swift; sourceTree = "<group>"; };
 		90F491E222EB0BA800FB90F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F491EF22EB0F1500FB90F2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		90F491F222EB166500FB90F2 /* NetworkStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStations.swift; sourceTree = "<group>"; };
+		90F491F422EB1B8200FB90F2 /* LoadStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStations.swift; sourceTree = "<group>"; };
+		90F491F622EB21E700FB90F2 /* MapSetupAndOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSetupAndOperations.swift; sourceTree = "<group>"; };
+		910AB8DFF723479E8D5A936C /* Pods_TmVeloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmVeloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E298BB05AF1A4B9DD794B4F7 /* Pods-TmVelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVelo.debug.xcconfig"; path = "Target Support Files/Pods-TmVelo/Pods-TmVelo.debug.xcconfig"; sourceTree = "<group>"; };
+		E8762C4D8861502D16403465 /* Pods-TmVeloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmVeloUITests.release.xcconfig"; path = "Target Support Files/Pods-TmVeloUITests/Pods-TmVeloUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736FBFB8B254EF9036138A81 /* Pods_TmVelo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C565C8C3D0520C44C7327EB /* Pods_TmVeloTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +109,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7E735035F1C71D424E3F03 /* Pods_TmVeloUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9014949822EB94C100C88D95 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				9014949922EB94D300C88D95 /* StationAnnotation.swift */,
+				9014949B22EB97C000C88D95 /* StationAnnotationView.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		9062153B22FAB19500EE9007 /* AnimationController */ = {
+			isa = PBXGroup;
+			children = (
+				9004E04A22FAB217002F876D /* Animator.swift */,
+				9004E04C22FAB77F002F876D /* AnimationFactory.swift */,
+			);
+			path = AnimationController;
+			sourceTree = "<group>";
+		};
+		90690CAE22FD6D9700152B94 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				90690CAF22FD6DCF00152B94 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		90F491B422EB0BA600FB90F2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +149,8 @@
 				90F491D422EB0BA800FB90F2 /* TmVeloTests */,
 				90F491DF22EB0BA800FB90F2 /* TmVeloUITests */,
 				90F491BE22EB0BA600FB90F2 /* Products */,
+				D8CC367E8104258219AB90CE /* Pods */,
+				C767E1FC05F3467F3E7BAFCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +167,24 @@
 		90F491BF22EB0BA600FB90F2 /* TmVelo */ = {
 			isa = PBXGroup;
 			children = (
+				90690CAE22FD6D9700152B94 /* Reachability */,
+				9062153B22FAB19500EE9007 /* AnimationController */,
+				9014949822EB94C100C88D95 /* Annotations */,
+				90F491F122EB140500FB90F2 /* ObjectDefinition */,
+				90F491EE22EB0EF800FB90F2 /* APIOperations */,
 				90F491C022EB0BA600FB90F2 /* AppDelegate.swift */,
-				90F491C222EB0BA600FB90F2 /* ViewController.swift */,
+				9062153922FA10B000EE9007 /* LeftSlideMenuViewController.swift */,
+				90F491F422EB1B8200FB90F2 /* LoadStations.swift */,
+				90F491F622EB21E700FB90F2 /* MapSetupAndOperations.swift */,
+				90F491C222EB0BA600FB90F2 /* MapViewController.swift */,
+				903745FC22EF29540095BC43 /* SideMenuRootViewController.swift */,
+				9062153322FA091400EE9007 /* SideMenuTableViewCell.swift */,
 				90F491C422EB0BA600FB90F2 /* Main.storyboard */,
 				90F491C722EB0BA800FB90F2 /* Assets.xcassets */,
-				90F491C922EB0BA800FB90F2 /* LaunchScreen.storyboard */,
 				90F491CC22EB0BA800FB90F2 /* Info.plist */,
+				9014949622EB2F1E00C88D95 /* Timisoara.gpx */,
+				9011D24D2302CD2E009D46AC /* GoogleService-Info.plist */,
+				900217B324ED4FC60078251A /* .gitignore */,
 			);
 			path = TmVelo;
 			sourceTree = "<group>";
@@ -125,6 +207,45 @@
 			path = TmVeloUITests;
 			sourceTree = "<group>";
 		};
+		90F491EE22EB0EF800FB90F2 /* APIOperations */ = {
+			isa = PBXGroup;
+			children = (
+				90F491EF22EB0F1500FB90F2 /* APIRequest.swift */,
+			);
+			path = APIOperations;
+			sourceTree = "<group>";
+		};
+		90F491F122EB140500FB90F2 /* ObjectDefinition */ = {
+			isa = PBXGroup;
+			children = (
+				90F491F222EB166500FB90F2 /* NetworkStations.swift */,
+			);
+			path = ObjectDefinition;
+			sourceTree = "<group>";
+		};
+		C767E1FC05F3467F3E7BAFCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEB58A5FAA637543BF30467 /* Pods_TmVelo.framework */,
+				910AB8DFF723479E8D5A936C /* Pods_TmVeloTests.framework */,
+				2FA3D3C29FFB4C976E761D87 /* Pods_TmVeloUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8CC367E8104258219AB90CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E298BB05AF1A4B9DD794B4F7 /* Pods-TmVelo.debug.xcconfig */,
+				2CBBD676A60883BC1A410345 /* Pods-TmVelo.release.xcconfig */,
+				386879454C15259B2706E0F5 /* Pods-TmVeloTests.debug.xcconfig */,
+				764A3FF1442BEA534416F7E1 /* Pods-TmVeloTests.release.xcconfig */,
+				62565DC341EDD356292DBAE5 /* Pods-TmVeloUITests.debug.xcconfig */,
+				E8762C4D8861502D16403465 /* Pods-TmVeloUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F491E522EB0BA800FB90F2 /* Build configuration list for PBXNativeTarget "TmVelo" */;
 			buildPhases = (
+				93E1FC8401C96EE34239B185 /* [CP] Check Pods Manifest.lock */,
 				90F491B922EB0BA600FB90F2 /* Sources */,
 				90F491BA22EB0BA600FB90F2 /* Frameworks */,
 				90F491BB22EB0BA600FB90F2 /* Resources */,
+				299D7AAFC2315EAFCDB1517C /* [CP] Embed Pods Frameworks */,
+				9011D24F2302CEFA009D46AC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F491E822EB0BA800FB90F2 /* Build configuration list for PBXNativeTarget "TmVeloTests" */;
 			buildPhases = (
+				4AA2FDB4555D63F0DBD382BF /* [CP] Check Pods Manifest.lock */,
 				90F491CD22EB0BA800FB90F2 /* Sources */,
 				90F491CE22EB0BA800FB90F2 /* Frameworks */,
 				90F491CF22EB0BA800FB90F2 /* Resources */,
@@ -167,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F491EB22EB0BA800FB90F2 /* Build configuration list for PBXNativeTarget "TmVeloUITests" */;
 			buildPhases = (
+				92C65D91347E6C41AF29A501 /* [CP] Check Pods Manifest.lock */,
 				90F491D822EB0BA800FB90F2 /* Sources */,
 				90F491D922EB0BA800FB90F2 /* Frameworks */,
 				90F491DA22EB0BA800FB90F2 /* Resources */,
@@ -229,7 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F491CB22EB0BA800FB90F2 /* LaunchScreen.storyboard in Resources */,
+				900217B424ED4FC60078251A /* .gitignore in Resources */,
+				9011D24E2302CD2E009D46AC /* GoogleService-Info.plist in Resources */,
 				90F491C822EB0BA800FB90F2 /* Assets.xcassets in Resources */,
 				90F491C622EB0BA600FB90F2 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +378,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		299D7AAFC2315EAFCDB1517C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmVelo/Pods-TmVelo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmVelo/Pods-TmVelo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TmVelo/Pods-TmVelo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA2FDB4555D63F0DBD382BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmVeloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9011D24F2302CEFA009D46AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		92C65D91347E6C41AF29A501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmVeloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E1FC8401C96EE34239B185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmVelo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90F491B922EB0BA600FB90F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F491C322EB0BA600FB90F2 /* ViewController.swift in Sources */,
+				9062153A22FA10B000EE9007 /* LeftSlideMenuViewController.swift in Sources */,
+				9004E04D22FAB77F002F876D /* AnimationFactory.swift in Sources */,
+				90F491C322EB0BA600FB90F2 /* MapViewController.swift in Sources */,
+				90F491F722EB21E700FB90F2 /* MapSetupAndOperations.swift in Sources */,
+				903745FD22EF29540095BC43 /* SideMenuRootViewController.swift in Sources */,
+				90F491F022EB0F1500FB90F2 /* APIRequest.swift in Sources */,
 				90F491C122EB0BA600FB90F2 /* AppDelegate.swift in Sources */,
+				90F491F522EB1B8200FB90F2 /* LoadStations.swift in Sources */,
+				90690CB022FD6DCF00152B94 /* Reachability.swift in Sources */,
+				9004E04B22FAB217002F876D /* Animator.swift in Sources */,
+				9014949A22EB94D300C88D95 /* StationAnnotation.swift in Sources */,
+				9014949C22EB97C000C88D95 /* StationAnnotationView.swift in Sources */,
+				9062153422FA091400EE9007 /* SideMenuTableViewCell.swift in Sources */,
+				90F491F322EB166500FB90F2 /* NetworkStations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +543,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		90F491C922EB0BA800FB90F2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90F491CA22EB0BA800FB90F2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -349,6 +583,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -410,6 +645,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -430,42 +666,60 @@
 		};
 		90F491E622EB0BA800FB90F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E298BB05AF1A4B9DD794B4F7 /* Pods-TmVelo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = TmVeloLaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 632W2LZA6K;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BHU3E4NNYU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InteractiveSideMenu\"",
+				);
 				INFOPLIST_FILE = TmVelo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ro.cseh17.publicTransTm.TmVelo;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.cseh17.ptt.tmVelo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		90F491E722EB0BA800FB90F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBBD676A60883BC1A410345 /* Pods-TmVelo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = TmVeloLaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 632W2LZA6K;
+				DEVELOPMENT_TEAM = BHU3E4NNYU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InteractiveSideMenu\"",
+				);
 				INFOPLIST_FILE = TmVelo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ro.cseh17.publicTransTm.TmVelo;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.cseh17.ptt.tmVelo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		90F491E922EB0BA800FB90F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386879454C15259B2706E0F5 /* Pods-TmVeloTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +741,7 @@
 		};
 		90F491EA22EB0BA800FB90F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764A3FF1442BEA534416F7E1 /* Pods-TmVeloTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +763,7 @@
 		};
 		90F491EC22EB0BA800FB90F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62565DC341EDD356292DBAE5 /* Pods-TmVeloUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +784,7 @@
 		};
 		90F491ED22EB0BA800FB90F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8762C4D8861502D16403465 /* Pods-TmVeloUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
